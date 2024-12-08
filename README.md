@@ -25,11 +25,11 @@
 
 ## Design Choices Made
 
-1. Used Vite as the build tool for its speed and ease of use.
-2. Employed Formik for form handling and Yup for validation, ensuring a smooth user experience.
+1. Used Vite as the build tool.
+2. Added Formik for form handling and Yup for validation.
 3. Implemented a password strength indicator to enhance security awareness among users.
 
 ## Assumptions or Limitations
 
-1. The application does not include backend integration; user data is not persisted beyond form submission.
-2. Further enhancements, such as routing and state management, can be implemented as needed.
+1. The application does not include backend integration
+2. The user data is not persisted beyond form submission.
