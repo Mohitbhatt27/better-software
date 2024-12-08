@@ -14,9 +14,13 @@ const SignUpForm: React.FC = () => {
       .required("Required"),
   });
 
-  const onSubmit = (values: typeof initialValues) => {
+  const onSubmit = (
+    values: typeof initialValues,
+    { resetForm }: { resetForm: () => void }
+  ) => {
     alert("Sign Up Successful");
     console.log(values);
+    resetForm();
   };
 
   const assessPasswordStrength = (password: string) => {

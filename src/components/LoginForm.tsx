@@ -11,12 +11,16 @@ const LoginForm: React.FC = () => {
     password: Yup.string().required("Required"),
   });
 
-  const onSubmit = (values: typeof initialValues) => {
+  const onSubmit = (
+    values: typeof initialValues,
+    { resetForm }: { resetForm: () => void }
+  ) => {
     if (values.rememberMe) {
       localStorage.setItem("email", values.email);
     }
     alert("Login Successful");
     console.log(values);
+    resetForm();
   };
 
   return (
